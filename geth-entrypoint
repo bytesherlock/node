@@ -11,10 +11,6 @@ P2P_PORT="${P2P_PORT:-30303}"
 ADDITIONAL_ARGS=""
 OP_GETH_GCMODE="${OP_GETH_GCMODE:-archive}"
 
-if [[ -z "$OP_NODE_NETWORK" ]]; then
-    echo "expected OP_NODE_NETWORK to be set" 1>&2
-    exit 1
-fi
 
 mkdir -p $GETH_DATA_DIR
 
